@@ -2,7 +2,9 @@
 var QRCode = require("qrcode");
 var canvas = document.getElementById("canvas");
 
-QRCode.toCanvas(canvas, "https://joelaravena.com", function (error) {
+const link = "https://joelaravena.com";
+
+QRCode.toCanvas(canvas, link, function (error) {
   if (error) console.error(error);
   console.log("success!");
 });
